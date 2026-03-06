@@ -100,4 +100,9 @@ void main() {
 
 // Sobrescrever o isTheSame() por ==
 
+// Em dart existe uma classe chamada Object e todas as classes que você criar ou que ja estão no dart herdam de object
+// Porque: Tudo é Objeto
+
+// Estudar hashcode
+
 // LIVRO: Arquitetura de computadores - memória
