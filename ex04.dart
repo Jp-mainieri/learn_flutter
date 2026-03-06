@@ -45,6 +45,14 @@ class Automovel extends Terrestre {
     super.printMeioTransporte();
     print('Número de Portas: $numeroPortas');
   }
+
+  bool isTheSame(Automovel outro) {
+    if(this.renavam == outro.renavam) {
+      return true;
+    }else{
+      return false;
+    }
+  }
 }
 
 class Motocicleta extends Terrestre {
@@ -75,5 +83,21 @@ class Embarcacao extends MeioTransporte {
     print('Capacidade de Containers: $capacidadeContainers');
   }
 }
+
+
+void main() {
+  Automovel v1 = Automovel('123', 'abc');
+  Automovel v2 = Automovel('123', 'abc');
+
+  //v1 = v2;
+
+  if(v1.isTheSame(v2)) {
+    print('Veículos com chassi e renavam iguais');
+  }else {
+    print('Veículos com chassi e renavam diferentes');
+  }
+}
+
+// Sobrescrever o isTheSame() por ==
 
 // LIVRO: Arquitetura de computadores - memória
