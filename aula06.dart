@@ -20,6 +20,7 @@
 // Treinar lambda functions
 // Olhar metodos dos tipos (String, double...)
 // O que é atributo privado
+// O que é uma expressão regular
 
 // Tudo que tem um . é um atributo
 // Tudo que tem () são métodos
