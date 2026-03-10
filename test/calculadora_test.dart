@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import '../exemploAulas/calculadora.dart';
+import '../Labs/calculadora.dart';
 
 void main() {
   test('add', () {
