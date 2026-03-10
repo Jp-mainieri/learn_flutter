@@ -259,4 +259,13 @@ void main() {
   calc.press(const Key(label: "2", type: KeyType.digit));
   calc.press(const Key(label: "Enter", type: KeyType.action, action: CalcAction.enter));
   print("Resultado: ${calc.display.text}");
+
+    print("\n--- Outro exemplo: 3.5*2 ---");
+  calc.press(const Key(label: "C", type: KeyType.action, action: CalcAction.clear));
+  calc.press(const Key(label: "3", type: KeyType.digit));
+  calc.press(const Key(label: "+", type: KeyType.operator, value: "+"));
+  calc.press(const Key(label: "+", type: KeyType.operator, value: "+"));
+  calc.press(const Key(label: "2", type: KeyType.digit));
+  calc.press(const Key(label: "Enter", type: KeyType.action, action: CalcAction.enter));
+  print("Resultado: ${calc.display.text}");
 }
