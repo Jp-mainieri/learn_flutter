@@ -30,10 +30,10 @@
 void chainingMethods() {
   String cidade = "campinas";
   cidade.replaceAll('a', 'A').replaceAll('p', 'P').replaceAll('s', 'r');
-  print(cidade)
+  print(cidade);
   // imprime campinas
   String nova = cidade.replaceAll('a', 'A').replaceAll('p', 'P').replaceAll('s', 'r');
-  print(cidade)
+  print(nova);
   //imprime cAmPinAr
 }
 
