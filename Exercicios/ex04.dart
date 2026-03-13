@@ -37,8 +37,7 @@ class Automovel extends Terrestre {
 
   // o construtor recebe os parâmetros obrigatórios do pai e opcionalmente
   // o número de portas
-  Automovel(String chassi, String renavam)
-      : super(chassi, renavam);
+  Automovel(super.chassi, super.renavam);
 
   @override
   void printMeioTransporte() {
@@ -47,7 +46,7 @@ class Automovel extends Terrestre {
   }
 
   bool isTheSame(Automovel outro) {
-    if(this.renavam == outro.renavam) {
+    if(renavam == outro.renavam) {
       return true;
     }else{
       return false;
@@ -58,7 +57,7 @@ class Automovel extends Terrestre {
 class Motocicleta extends Terrestre {
   double? cilindradas;
 
-  Motocicleta(String chassi, String renavam) :super(chassi,renavam);
+  Motocicleta(super.chassi, super.renavam);
     @override
   void printMeioTransporte() {
     super.printMeioTransporte();

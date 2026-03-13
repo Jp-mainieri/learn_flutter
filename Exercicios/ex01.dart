@@ -4,7 +4,7 @@ int multiplicacao(int a, int b){
 }
 
 bool aprovado(var nota){
-  var aprovado;
+  bool aprovado;
   if(nota >=6) {
       aprovado = true;
     if(nota >= 8) {

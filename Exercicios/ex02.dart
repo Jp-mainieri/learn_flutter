@@ -44,7 +44,7 @@ Future<String> buscarDados(){
 void main() {
   print('João Pedro');
   var a = 2, b = 3;
-  var soma;
+  int soma;
   soma = a + b;
   print(soma);
   var n = 6;
