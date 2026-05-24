@@ -4,7 +4,7 @@ class Pessoa {
   final double altura;
   double? _imc;
 
-  const Pessoa(this.nome, this.peso, this.altura) {
+  Pessoa(this.nome, this.peso, this.altura) {
     _calcularIMC();
   }
 
