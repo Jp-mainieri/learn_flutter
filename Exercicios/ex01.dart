@@ -26,9 +26,7 @@ void printlista(var lista) {
 
 int countLista(var lista) {
   var count = 0;
-  for (final f in lista) {
-    count++;
-  }
+  lista.forEach({count++});
   return count;
 }
 
