@@ -12,21 +12,14 @@ double calcularErroMedioQuadratico(
     throw ArgumentError('Nenhuma lista pode estar vazia.');
   }
   //
-  final List<double> diffValores = [];
-  for (int i = 0; i < valoresReais.length; i++) {
-    diffValores.add(valoresReais[i] - valoresPrevistos[i]);
-  }
-  //
-  final List<double> squaredDiffValores = [];
-  for (int i = 0; i < diffValores.length; i++) {
-    squaredDiffValores.add((pow(diffValores[i], 2)).toDouble());
-  }
-  //
   double mediaSquaredDiffValores = 0;
-  for (int i = 0; i < squaredDiffValores.length; i++) {
-    mediaSquaredDiffValores += squaredDiffValores[i];
+  for (int i = 0; i < valoresReais.length; i++) {
+    mediaSquaredDiffValores += pow(
+      valoresReais[i] - valoresPrevistos[i],
+      2,
+    ).toDouble();
   }
-  return mediaSquaredDiffValores / squaredDiffValores.length;
+  return mediaSquaredDiffValores / valoresReais.length;
 }
 
 void main() {
@@ -37,3 +30,5 @@ void main() {
 
   print(mse); // 5.666...
 }
+
+// Elevar ao quadrado evita que erros positivos e negativos se anulem, deixando a diferença concreta.
